@@ -1,5 +1,27 @@
-# vscode folder ignore..
+# vscode folder ignore
 /.vscode
 
-# docs folder Ignore..
+# docs folder Ignore
 /docs
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Miljøfiler (API keys, passwords, etc.)
+.env
+
+# SQLite-database (må ikke trackes)
+filevault.db
+
+# Krypterede filer & midlertidige uploads
+uploads/
+
+# Testfiler (valgfrit, hvis du ikke vil gemme testfiler i Git)
+test_files/
+
+# VS Code settings (valgfrit)
+.vscode/
+
+# Logfiler
+*.log
