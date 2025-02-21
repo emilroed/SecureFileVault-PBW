@@ -1,6 +1,4 @@
 const Database = require("better-sqlite3");
-
-// Opret databasefilen, hvis den ikke findes
 const db = new Database("./filevault.db");
 
 // Opret tabel, hvis den ikke findes
@@ -9,7 +7,8 @@ db.exec(`
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         filename TEXT NOT NULL,
         encrypted_filename TEXT NOT NULL,
-        user_id INTEGER,
+        user_id INTEGER NOT NULL,
+        iv TEXT NOT NULL, 
         upload_date TEXT DEFAULT CURRENT_TIMESTAMP
     )
 `);
