@@ -1,5 +1,5 @@
 # 🚀 Sikkerhed & database
-.env
+/.env
 filevault.db
 
 # 🚀 Dependencies & build-filer
